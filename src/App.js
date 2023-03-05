@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import List from './component/List';
+import LoginForm from './component/LoginForm';
 import About from './pages/About';
 import Home from './pages/Home';
 function App() {
@@ -18,7 +19,8 @@ function App() {
       {/* <button onClick={() => { handleRoute('home') }}>Home</button>
       <button onClick={() => { handleRoute('about') }}>About</button>
       {state.home === 1 ? <Home /> : <About />} */}
-      <List />
+      {/* <List /> */}
+      <LoginForm />
     </div>
   );
 }
