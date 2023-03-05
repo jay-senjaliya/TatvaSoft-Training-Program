@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import List from './component/List';
 import About from './pages/About';
 import Home from './pages/Home';
 function App() {
@@ -14,9 +15,10 @@ function App() {
   }
   return (
     <div className="App">
-      <button onClick={() => { handleRoute('home') }}>Home</button>
+      {/* <button onClick={() => { handleRoute('home') }}>Home</button>
       <button onClick={() => { handleRoute('about') }}>About</button>
-      {state.home === 1 ? <Home /> : <About />}
+      {state.home === 1 ? <Home /> : <About />} */}
+      <List />
     </div>
   );
 }
