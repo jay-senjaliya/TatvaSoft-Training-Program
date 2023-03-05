@@ -1,5 +1,6 @@
 import React from 'react'
 import Title from './Title';
+import './../App.css';
 
 export default function List() {
     const listArr = [{
@@ -29,9 +30,12 @@ export default function List() {
     }];
     return (
         <div>
-            {listArr.map(e => {
-                return <Title key={e.title} title={e.title} description={e.description} id={e.id} />
-            })}
+            <div className='container cards row'>
+                {listArr.map(e => {
+                    return <Title key={e.title} title={e.title} description={e.description} id={e.id} />
+                })}
+            </div>
+
         </div>
     )
 }

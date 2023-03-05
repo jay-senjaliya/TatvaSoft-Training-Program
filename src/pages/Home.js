@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Title from '../component/Title'
+import './../App.css'
 
 export default class Home extends Component {
     constructor() {
@@ -15,7 +16,10 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <Title title={this.state.title} description={this.state.description} />
+                <div className='cards row'>
+                    <Title title={this.state.title} description={this.state.description} />
+                </div>
+
                 {/* <Title title={this.state.title} description={this.state.description} />
                 <Title title={this.state.title} description={this.state.description} /> */}
             </div>
