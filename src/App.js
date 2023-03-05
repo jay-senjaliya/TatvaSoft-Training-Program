@@ -1,9 +1,9 @@
 import './App.css';
+import Home from './pages/Home';
 function App() {
   return (
     <div className="App">
-      <h1>Tatvasoft Training Program</h1>
-      <p>This program is planned for learning react.js, and organised by Tatvasoft.</p>
+      <Home />
     </div>
   );
 }
